@@ -1,0 +1,19 @@
+# This program is used to find the Diameter, Circumference, Surface Area, and Volume of a sphere using a given radius. 
+# The radius is user generated. The radius will be used in certain equations to calculate the correct output. 
+import math
+import fractions
+# This is the variable for the fraction in the Volume equation
+f1 = fractions.Fraction(4,3)
+# This will be our starting point where we get the radius input from the user. 
+# It will get a float value since it has a decimal.
+radius = float(input("What is the radius of a sphere: "))
+# This is where all the math will be complete and rounded to the 2 significatn digits after the decimal
+diameter = round(2 * radius, 2)
+circumference = round(diameter * math.pi, 2)
+Surface_Area = round(4 * math.pi * radius * radius, 2)
+Volume = round(f1 * math.pi * radius * radius * radius, 2)
+# Output after the equations are complete
+print("Diameter :", diameter)
+print("Circumference :", circumference)
+print("Surface Area :", Surface_Area)
+print("Volume :", Volume)
